@@ -6,7 +6,6 @@ class Player extends Cards{
     constructor() {
         super()        
         this.id;
-        this.score = 0;
-        
+        this.score = 0;        
     }
 }

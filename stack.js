@@ -2,6 +2,9 @@
 //     0: 99,
 //     1:90
 // }
+/**
+ * Class que representa a pilha.
+ */
 class Stack {
     constructor() {
         this.items = {},

@@ -1,1 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <style>
+        body {
+            background-image: linear-gradient(to top right, #1e7e34, #45e25cd6);
+        }
+
+        .card-img {
+            max-width: 281px;
+            max-height: 291px;
+            height: auto;
+            width: auto;
+        }
+        .card_player_1 {
+            display: inline-block;
+        }
+        .init-game {
+            border: 1px solid #e3e3e3;
+            
+        }
+        .game-rules h3 {
+            font-size:36px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="game-rules">
+        <h3>Iniciar jogo</h3>
+        <label for="fname">Quantos oponentes deseja enfrentar?</label>
+        <input type="number" id="quantity" name="quantity" min="1" max="5"><br><br>
+        <p>Regra do jogo:</p>
+        <ul>
+            <li>escolha numerod e jogador</li>
+            <li>clique em cima da carta que quer jogar</li>
+            <li>a competicao inicia e todos os jogadores jogam uma carta</li>
+            <li>Aquele que tiver maior carta vence a rodada</li>
+            <li>A competicao pode continuar enquanto os jogadores tiverem cartas</li>
+            <li>Assim que todos os jogadores tiverem jogado todas as cartas o jogo encerra</li>
+            <li>Quem tiver verncido o maior numero de rodadas vence</li>
+        </ul>
+        <input type="submit" value="Submit">
+    </div>
+    
+    <section class="container">
+        <div class="playersCards">
+            <h3>Suas cartas</h3>
+        </div>
+        <div class="row">
+            <div class="player">
+                <div class="card_player_1"><img id="0" class="card-img" src=""></div>
+                <div class="card_player_1"><img id="1" class="card-img" src=""></div>
+                <div class="card_player_1"><img id="2" class="card-img" src=""></div>
+                <div class="card_player_1"><img id="3" class="card-img" src=""></div>
+                <div class="card_player_1"><img id="4" class="card-img" src=""></div>
+            </div>
+        </div>
+    </section>    
+    <section class="container">
+        <div class="playersCards">
+            <h3>Seus Oponentes</h3>
+        </div>
+        <div class="row">
+            <div class="other_players">
+
+            </div>
+        </div>
+    </section>
+
+
+    <script src="stack.js"></script>
+    <script src="cards.js"></script>
+    <script src="player.js"></script>
+    <script src="gameStack.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
